@@ -1,4 +1,4 @@
 .terraform/
-azure-provider.tf
 *.tfstate
 *.tfstate.backup
+azureprovider.tf
