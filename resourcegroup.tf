@@ -7,3 +7,13 @@ resource "azurerm_resource_group" "flip-network-rg" {
     Owner     = "Sindhuri"
   }
 }
+
+resource "azurerm_resource_group" "flip-computeandstorage-rg" {
+  name     = "flip-computeandstorage-rg"
+  location = "East US"
+
+  tags = {
+    Env = "prod"
+    Owner     = "Sindhuri"
+  }
+}
