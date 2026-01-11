@@ -1,5 +1,5 @@
-resource "azurerm_resource_group" "flip-network-rg" {
-  name     = "flip-network-rg"
+resource "azurerm_resource_group" "flip_network_rg" {
+  name     = "flip_network_rg"
   location = "East US"
 
   tags = {
@@ -8,8 +8,8 @@ resource "azurerm_resource_group" "flip-network-rg" {
   }
 }
 
-resource "azurerm_resource_group" "flip-computeandstorage-rg" {
-  name     = "flip-computeandstorage-rg"
+resource "azurerm_resource_group" "flip_computeandstorage_rg" {
+  name     = "flip_computeandstorage_rg"
   location = "East US"
 
   tags = {
