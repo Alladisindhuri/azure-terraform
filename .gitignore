@@ -2,3 +2,4 @@
 *.tfstate
 *.tfstate.backup
 azureprovider.tf
+.env
