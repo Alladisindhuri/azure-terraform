@@ -5,7 +5,7 @@ resource "azurerm_subnet" "flip_subnet" {
   address_prefixes     = ["172.16.2.0/29"]
 }
 
-resource "azurerm_subnet_network_security_group_association" "flip_nsg" {
+resource "azurerm_subnet_network_security_group_association" "flip_subnet_nsg_association" {
   subnet_id                 = azurerm_subnet.flip_subnet.id
   network_security_group_id = azurerm_network_security_group.flip_nsg.id
 }
