@@ -10,13 +10,13 @@ resource "azurerm_network_security_group" "flip_nsg" {
 }
 
 resource "azurerm_network_security_rule" "allow_ssh" {
-  name                        = "allow-ssh"
-  priority                    = 100
+  name                        = "deny-ssh"
+  priority                    = 1000
   direction                   = "Inbound"
-  access                      = "Allow"
-  protocol                    = "Tcp"
+  access                      = "Deny"
+  protocol                    = "*"
   source_port_range           = "*"
-  destination_port_range      = "22"
+  destination_port_range      = "*"
   source_address_prefix       = "*"
   destination_address_prefix  = "*"
   resource_group_name         = azurerm_resource_group.flip_network_rg.name
