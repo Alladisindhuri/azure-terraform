@@ -3,8 +3,8 @@ resource "azurerm_resource_group" "flip_network_rg" {
   location = "East US"
 
   tags = {
-    Env = "prod"
-    Owner     = "Sindhuri"
+    Env   = "prod"
+    Owner = "Sindhuri"
   }
 }
 
@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "flip_computeandstorage_rg" {
   location = "East US"
 
   tags = {
-    Env = "prod"
-    Owner     = "Sindhuri"
+    Env   = "prod"
+    Owner = "Sindhuri"
   }
 }
