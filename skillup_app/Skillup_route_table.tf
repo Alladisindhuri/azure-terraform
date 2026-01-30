@@ -22,3 +22,9 @@ resource "azurerm_route" "Skillup_to_Flip_via_nva" {
   next_hop_in_ip_address = "172.16.0.5"
   depends_on             = [azurerm_route_table.Skillup_app_rt]
 }
+
+# Subnet Association
+resource "azurerm_subnet_route_table_association" "skillup_app_rt_assoc" {
+  subnet_id      = azurerm_subnet.Skillup_subnet.id
+  route_table_id = azurerm_route_table.Skillup_app_rt.id
+}
